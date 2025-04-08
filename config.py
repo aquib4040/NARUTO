@@ -27,7 +27,7 @@ ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ
 BOT_USERNAME = environ.get("BOT_USERNAME", "") # without @
 PORT = environ.get("PORT", "8080")
 
-OWNER_ID = int(os.environ.get("OWNER_ID", )) #Owner user id < about display
+OWNER_ID = int(os.environ.get("OWNER_ID", "")) #Owner user id < about display
 SUPPORT_GROUP = os.environ.get("SUPPORT_GROUP", "") # WITHOUR @ < about display
 CHANNEL = os.environ.get("CHANNEL", "") # WITHOUR @ < about display
 
